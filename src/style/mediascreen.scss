@@ -1,0 +1,77 @@
+@import './color.scss';
+
+@media screen and (max-width:390px) {
+  nav {
+    padding: 0%;
+    width: 130%;
+  }
+
+  nav h1 {
+    text-transform: capitalize;
+  }
+
+  nav main a:nth-child(1) {
+    position: relative;
+    left: 50px;
+  }
+
+  nav main a:nth-child(2) {
+    position: relative;
+    left: 40px;
+  }
+
+  nav main a:nth-child(3) {
+    position: relative;
+    left: 30px;
+  }
+
+  nav main a:nth-child(4) {
+    position: relative;
+    left: 20px;
+  }
+
+  nav main a:nth-child(5) {
+    position: relative;
+    left: 10px;
+  }
+
+
+  @media screen and (max-width:390px) {
+    .Home main {
+      position: absolute;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 0%;
+      padding: 2rem;
+      justify-content: center;
+    }
+
+    .Home>main>p {
+      font: 900 1rem "Roboto";
+      color: white;
+      margin-left: 52%;
+    }
+
+    .Home main h1 {
+      // font: 400 3rem $text1;
+      color: $first;
+      margin-top: 150px;
+      margin-left: 150px;
+      font-size: 30px;
+    }
+
+    .Home::before {
+      content: '';
+      top: -12%;
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      background: no-repeat center/auto url("../asset/blue master.png");
+      filter: blur(3px);
+      border-radius: 0;
+    }
+  }
+}

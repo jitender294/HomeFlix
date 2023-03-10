@@ -1,0 +1,110 @@
+@import "./color.scss";
+
+* {
+    width: 100%;
+}
+
+footer {
+    background-color: $first;
+    height: 200px;
+    width: 100%;
+    color: $dark;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem;
+    overflow: hidden;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font: 700 2rem $text1;
+            text-transform: uppercase;
+            color: $third;
+        }
+
+        >p {
+            font: 300 2rem $text1;
+            margin: 1rem 0;
+        }
+
+        h5 {
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: large;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                color: $dark;
+                margin: 10px;
+                margin-left: 80%;
+                font: 900 1rem $text2;
+
+                &:hover {
+                    color: $third;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    * {
+        width: 100%;
+    }
+
+    footer {
+        background-color: white;
+        height: 200px;
+        width: 140%;
+        color: rgb(44, 44, 44);
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    .carousel-root {
+        outline: none;
+        width: 140%;
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    * {
+        width: 100%;
+    }
+
+    .carousel-root {
+        outline: none;
+        width: 140%;
+    }
+
+    .carousel .slide .legend {
+        transition: all .5s ease-in-out;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -45%;
+        width: 90%;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+        opacity: 0.25;
+        transition: opacity .35s ease-in-out;
+    }
+}
