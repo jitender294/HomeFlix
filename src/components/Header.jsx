@@ -6,8 +6,8 @@ const Header = () => {
     return (  
         <>  
         <nav>  
-            <h1>Jitender</h1>    
-            <main>
+            <h1>Jitender Web</h1>    
+            <main>  
                 <HashLink to="/#Home">Home</HashLink>  
                 <HashLink to="/Contact">Contact</HashLink>  
                 <HashLink to="/#about">About</HashLink>

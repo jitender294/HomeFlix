@@ -1,6 +1,6 @@
 import React from 'react'
 import '../style/Home.scss'
-import vg from '../asset/2.webp'
+import vg from '../asset/home-office-569153_1280.jpg'
 import {
     AiFillGoogleCircle,
     AiFillAmazonCircle,
@@ -13,17 +13,16 @@ const Home = () => {
         <>
             <div className='Home' id='Home'>
                 <main>
-                    <h1>TechStar</h1>
-                    <p>Solutioin to all your problem</p>
-                </main>
+                    <h1>TechWeb</h1>
+                    <p>MAKE YOUR OWN PROJECT</p>
+                </main>  
             </div>
 
             <div className="home2" id='Contact'>
                 <img src={vg} alt="" />
                 <div>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reprehenderit tempore magni, quae atque illo vel quaerat. Enim voluptatibus illum doloremque mollitia esse maxime, earum
-                        aspernatur, obcaecati repellendus consequuntur nihil!
+                        Highly organized, self-motivated individual with excellent time-management and leadership skills. Proven ability in developing front-end applications using HTML, CSS, and JavaScript, Reactjs.
                     </p>
                 </div>
             </div>
@@ -31,7 +30,7 @@ const Home = () => {
             <div className="home3" id="about">
                 <div>
                     <h1>Who we are?</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nulla temporibus pariatur ab mollitia sapiente illo porro necessitatibus libero, voluptatibus praesentium laboriosam ut voluptas! </p>
+                    <p>Highly organized, self-motivated individual with excellent time-management and leadership skills. </p>
                 </div>
             </div>
 
@@ -41,26 +40,34 @@ const Home = () => {
                     <article>
                         <div
                             style={{ animationDelay: "0.3s" }}>
-                            <AiFillGoogleCircle />
-                            <p>Google</p>
+                            <a href="https://www.google.com" target={"blank"}>
+                                <AiFillGoogleCircle />
+                                <p id='left'>Google</p>
+                            </a>
                         </div>
 
                         <div
                             style={{ animationDelay: "0.5s" }}>
-                            <AiFillAmazonCircle />
-                            <p>Amazon</p>
+                            <a href="https://www.amazon.com" target={"blank"}>
+                                <AiFillAmazonCircle />
+                                <p id='left'>Amazon</p>
+                            </a>
                         </div>
 
                         <div
                             style={{ animationDelay: "0.7s" }}>
-                            <AiFillYoutube />
-                            <p>Youtube</p>
+                            <a href="https://www.youtube.com" target={"blank"}>
+                                <AiFillYoutube />
+                                <p id='left'>Youtube</p>
+                            </a>
                         </div>
 
                         <div
                             style={{ animationDelay: "1s" }}>
-                            <AiFillInstagram />
-                            <p>Instagram</p>
+                            <a href="https://www.instagram.com" target={"blank"}>
+                                <AiFillInstagram />
+                                <p id='left'>Instagram</p>
+                            </a>
                         </div>
                     </article>
                 </div>

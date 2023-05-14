@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import img1 from '../asset/3.jpg'
+import img1 from '../asset/home-office-569153_1280.jpg'
 
 const Services = () => {
     return (
@@ -11,8 +11,8 @@ const Services = () => {
                 autoPlay  
                 autoFocus  
                 // showStatus={false}
-                showArrows={false}
-                interval={1000}  
+                showArrows={false} 
+                interval={1000}    
                 showThumbs={false}  
                 showIndicators={false} >  
 
